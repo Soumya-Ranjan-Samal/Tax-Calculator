@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tax Callculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  
+  <body>
+
+    <div class="mainSheet">
+      <form>
+        <!-- <div class="value"> -->
+      <div class="egai common">
+        <label for="egai">Enter gross annual income <i class="fa-regular fa-circle-question q1"></i> <i class="fa-solid fa-circle-exclamation e1"></i></label>
+        <input type="text" id="egai" placeholder="  Enter gross annual income">
+      </div>
+      <div class="eei common">
+        <label for="eei">Enter extra income <i class="fa-regular fa-circle-question q2"></i> <i class="fa-solid fa-circle-exclamation e2"></i></label>
+        <input type="text" id="eei" placeholder="  Enter extra income from other sourses" >
+      </div>
+      <div class="dropeag common">
+        <label for="ageGroup">Enter age group <i class="fa-regular fa-circle-question q3"></i> <i class="fa-solid fa-circle-exclamation e3"></i></label>
+        <select name="ageGroup" id="ageGroup" style="opacity: 0.4;">
+          <option value="0">Select your age</option>
+          <option value="1">age &lt 40</option>
+          <option value="2">40 &#x2264 age &lt 60</option>
+          <option value="3">age &#x2265 60</option>
+        </select>
+      </div>
+      <div class="etad common">
+        <label for="etad">Enter total applicable deduction <i class="fa-regular fa-circle-question q4"></i> <i class="fa-solid fa-circle-exclamation e4" ></i></label>
+       <input type="text" placeholder="  Add total applicable deductions" id="etad">
+      </div>
+       <button>Submit</button>
+      <!-- </div> -->
+      </form>
+    </div>
+    <div class="hover1 abouts">
+      Gross annual income is your total salary in a year before any deduction
+    </div>
+    <div class="hover2 abouts">
+      Your extra income from other source
+    </div>
+    <div class="hover3 abouts">
+      In which range your age resides
+    </div>
+    <div class="hover4 abouts">
+      Subtractable expenses from income to lower tax
+    </div>
+    <div class="noChar">
+      Please enter number only
+    </div>
+    <div class="noAge">
+      Enter your age!
+    </div>
+    <div class="result nunito">
+      <h1>Your overall income will be</h1>
+      <h2>1,20,000</h2>
+      <p>after tax deductions</p>
+      <button id="close">Close</button>
+    </div>
+  <script src="app.js"></script>
+  </body>
+</html>
